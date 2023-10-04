@@ -1,21 +1,22 @@
 import React from 'react';
+import Tarjeta from './Tarjeta.jsx';
 import './About.css';
 import Foto from '../assets/Foto.jpg'
 
-const About  = ({titulo, nombre, email, descripción }) =>{
+
+const About = () => {
     return(
-        <>
-        <div class='card'>
+        <div>
             <img id='picture' src={Foto} 
             />
-        
-            <h1>{titulo}</h1>
-            <h2>{nombre}</h2>
-            <h2>{email}</h2>
-            <p>{descripción}</p>
+             <Tarjeta 
+             Titulo= "Información personal" 
+             Nombre= "Elizabeth"
+             Email= "elipila21@gmail.com"
+             Descripción ="Me gustan los temas con relación a la tecnología y ciencia, disfruto estar desarrollando habilidades de lógica para poder codificar utilizando buenas prácticas. Mis colores favoritos son el morado y el negro." 
+             />
         </div>
-        
-        </>
+
     )
 }
 
